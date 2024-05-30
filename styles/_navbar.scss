@@ -1,0 +1,128 @@
+@use "fonts";
+
+$link-color: #fff;
+$hover-color: #fcd253;
+
+.nav-container {
+   width: 75%;
+   height: 8vh;
+   position: relative;
+   overflow: hidden;
+
+   &__logo {
+      position: absolute;
+      top: 15px;
+      max-width: 186px;
+      max-height: 26px;
+   }
+}
+
+.nav {
+   position: absolute;
+   top: 15px;
+   width: 100%;
+   &__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__link {
+      display: block;
+      margin-right: 24px;
+      font-family: fonts.$interactive-font;
+      letter-spacing: 1.6px;
+      color: $link-color;
+      text-decoration: none;
+      &:hover {
+         color: $hover-color;
+      }
+   }
+   &__icon {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+       width: 100%;
+       height: 16vh;
+       &__logo {
+          position: absolute;
+          top: 30px;
+          margin-left: 12px;
+       }
+    }
+    .nav {
+       position: absolute;
+       top: 30px;
+       &__link {
+          &:hover {
+             color: $hover-color;
+          }
+       }
+    }
+ }
+ 
+ @media screen and (max-width: 320px) {
+    .nav {
+       &__list:not(:last-child) {
+       }
+       &__link {
+          display: none;
+       }
+       &__icon {
+          float: right;
+          display: block;
+          position: absolute;
+          right: 30px;
+          cursor: pointer;
+       }
+    }
+    .nav-container.responsive {
+       height: 40vh;
+       display: flex;
+       position: relative;
+    }
+ 
+    .nav-container.responsive img {
+       display: none;
+    }
+ 
+    .nav-container.responsive .fa-solid {
+       position: absolute;
+       right: 0;
+       top: 0;
+    }
+ 
+    .nav-container.responsive .nav {
+       position: absolute;
+       top: 0;
+    }
+ 
+    .nav-container.responsive .nav__list {
+       display: block;
+    }
+ 
+    .nav-container.responsive .nav__link {
+       float: none;
+       display: block;
+       text-align: left;
+       color: $link-color;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 1.333rem;
+       &__hover {
+          color: $hover-color;
+       }
+    }
+ 
+    .nav-container.responsive .nav__icon {
+       position: absolute;
+       top: 30px;
+    }
+ }
+ .fa-bars {
+    font-size: 1rem;
+    transition-duration: 0.4s;
+ }
+ 
