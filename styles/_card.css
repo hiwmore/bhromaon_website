@@ -1,1 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@100..700&display=swap");.card{width:100%;max-width:534px;max-height:374px;padding-bottom:50px;background-color:rgba(35,35,35,0.9);padding-left:32px;font-family:"Josefin Sans",serif;font-size:1.25rem;line-height:26px;letter-spacing:1.5px}.card__xs-header{color:#e8e8e8;margin:49px 0 23px 0}.card__small-header{font-family:"Josefin Sans",serif;text-transform:uppercase;margin-bottom:13px}.card__info{margin-bottom:46px}
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@100..700&display=swap");
+.card{
+    width:100%;
+    max-width:534px;
+    max-height:374px;
+    padding-bottom:50px;
+    background-color:rgba(35,35,35,0.9);
+    padding-left:32px;
+    font-family:"Josefin Sans",serif;font-size:1.25rem;
+    line-height:26px;
+    letter-spacing:1.5px
+}
+.card__xs-header{
+    color:#e8e8e8;
+    margin:49px 0 23px 0
+}
+.card__small-header{
+    font-family:"Josefin Sans",serif;
+    text-transform:uppercase;
+    margin-bottom:13px
+}
+.card__info{
+    margin-bottom:46px
+}
